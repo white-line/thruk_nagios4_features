@@ -1,0 +1,16 @@
+$routes->{'/thruk/plugins/nagios4_features/statusjson.cgi'}
+  = 'Thruk::Controller::nagios4_features::statusjson';
+
+$routes->{'/thruk/plugins/nagios4_features/objectjson.cgi'}
+  = 'Thruk::Controller::nagios4_features::objectjson';
+
+$routes->{'/thruk/plugins/nagios4_features/map.cgi'}
+  = 'Thruk::Controller::nagios4_features::map';
+
+# Menu
+Thruk::Utils::Menu::add_section('name' => 'Nagios4 Features');
+
+Thruk::Utils::Menu::insert_item('Nagios4 Features', {
+  'href'  => '/thruk/plugins/nagios4_features/map.cgi',
+  'name'  => 'Map',
+});

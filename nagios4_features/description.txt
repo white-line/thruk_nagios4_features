@@ -1,0 +1,1 @@
+Features from Nagios4 - statusjson.cgi, objectjson.cgi and some UI elements
