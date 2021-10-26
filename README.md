@@ -2,7 +2,7 @@
 
 It's a port some UI elements and emulating some CGI scripts from Nagios® Core™ ( version 4.4.6 at moment ) ( [www.nagios.org](https://www.nagios.org/) ) for Thruk Monitoring Interface ( [thruk.org](http://thruk.org/) ).
 
-![Alt text](./screenshot.png "")
+![Screenshot](./screenshot.png "")
 
 ## Project Status
 - StatusMap UI element - released
