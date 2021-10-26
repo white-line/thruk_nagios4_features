@@ -2,12 +2,15 @@
 
 It's a port some UI elements and emulating some CGI scripts from Nagios® Core™ ( version 4.4.6 at moment ) ( [www.nagios.org](https://www.nagios.org/) ) for Thruk Monitoring Interface ( [thruk.org](http://thruk.org/) ).
 
+![Alt text](./screenshot.png "")
+
 ## Project Status
 - StatusMap UI element - released
 - Trends UI element - To Do
 - Histogram UI element - To Do
 - objectjson.cgi - emulating some functionality
 - statusjson.cgi - emulating some functionality
+
 ## Installation
 
 Just move **nagios4_features** folder to Thruk **plugins_available** ( example path: /etc/thruk/plugins/plugins-available/ ), execute in shell:
