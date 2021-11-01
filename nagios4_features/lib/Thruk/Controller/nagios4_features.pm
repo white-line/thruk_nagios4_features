@@ -68,7 +68,7 @@ sub statusjson {
       my $status = 'unknown';
       $status = 'up' if $host->{state} eq 0;
       $status = 'down' if $host->{state} eq 1;
-      $status = 'pending' if $host->{state} eq 2;
+      $status = 'unreachable' if $host->{state} eq 2;
 
       my $plugin_output = $host->{plugin_output}."\n".$host->{long_plugin_output};
       $plugin_output =~ s/\\n/\n/g;
