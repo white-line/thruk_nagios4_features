@@ -50,6 +50,11 @@ div#popup {
 	pointer-events: none;
 }
 
+div#popup table {
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
 div#popup td {
 	vertical-align: top;
 }
