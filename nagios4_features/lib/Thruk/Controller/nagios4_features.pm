@@ -31,7 +31,7 @@ sub statusjson {
     format_version => 0,
     result => {
       cgi => 'statusjson.cgi',
-      user => '',
+      user => $c->stash->{'remote_user'},
       query => $query,
       'query_status' => 'released',
       'type_code' => 0,
@@ -120,7 +120,7 @@ sub objectjson {
     format_version => 0,
     result => {
       cgi => 'objectjson.cgi',
-      user => '',
+      user => $c->stash->{'remote_user'},
       query => $query,
       'query_status' => 'released',
       'type_code' => 0,
