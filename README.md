@@ -60,7 +60,7 @@ Use Thruk Action Menu. For example add in your thruk_local.conf:
     <action_menu_apply>
         hostmenu    = .*;$             # matches all hosts only
     </action_menu_apply>
-    
+
 ## Differences between Nagios Core 4 original code
 - Mostly changes - is adaptation for Thruk environment
-- Added "plugin output" in popups for StatusMap UI element and some more changes
+- Added "plugin output" and some more changes in popups for StatusMap UI element 
