@@ -142,7 +142,10 @@ sub objectjson {
   if ($query eq 'hostlist')
   {
     my $hosts = $c->db->get_hosts(filter =>
-      [ Thruk::Utils::Auth::get_auth_filter($c, 'hosts'), $hostfilter ]
+      [ Thruk::Utils::Auth::get_auth_filter($c, 'hosts'), $hostfilter ],
+      columns => [ qw/
+        name address display_name alias parents childs icon_image
+        /]
     );
     # $json->{data}{hosts_from_thrukdb} = $hosts; # for development
 
