@@ -86,7 +86,10 @@ sub statusjson {
   elsif ($query eq 'servicelist')
   {
     my $services = $c->db->get_services( filter =>
-      [ Thruk::Utils::Auth::get_auth_filter($c, 'services'), $servicefilter, description => { '~~' => "" } ]
+      [ Thruk::Utils::Auth::get_auth_filter($c, 'services'), $servicefilter, description => { '~~' => "" } ],
+      columns => [ qw/
+        description host_name state
+        /]
     );
     # $json->{data}{services_from_thrukdb} = $services; # for development
 
