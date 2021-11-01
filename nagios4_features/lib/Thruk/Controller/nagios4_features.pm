@@ -61,7 +61,7 @@ sub statusjson {
         name address state plugin_output long_plugin_output last_check last_state_change
         /]
     );
-     $json->{data}{hosts_from_thrukdb} = $hosts; # for development
+    # $json->{data}{hosts_from_thrukdb} = $hosts; # for development
 
     for my $host (@{ $hosts })
     {
