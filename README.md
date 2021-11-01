@@ -37,7 +37,7 @@ In your thruk_local.conf ( or thruk.conf ):
             #        9 = Depth Layers (Vertical)
             #        10 = Force Map
             default_statusmap_layout = 6
-    </Component> 
+    </Component>
 ## Actions in Thruk menu
 
 Use Thruk Action Menu. For example add in your thruk_local.conf:
@@ -56,11 +56,11 @@ Use Thruk Action Menu. For example add in your thruk_local.conf:
            ]\
         }
     </action_menu_items>
-    
+
     <action_menu_apply>
         hostmenu    = .*;$             # matches all hosts only
     </action_menu_apply>
+    
 ## Differences between Nagios Core 4 original code
 - Mostly changes - is adaptation for Thruk environment
-- Added "plugin output" in popups for StatusMap UI element
-
+- Added "plugin output" in popups for StatusMap UI element and some more changes
